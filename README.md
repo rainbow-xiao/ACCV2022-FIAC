@@ -19,6 +19,22 @@ Python: 3.8
 
 Pytorch: 1.9.0+cu111
 
+### Environment
+
+Requirements
+```bash
+git clone https://github.com/XL-H/ACCV2022.git
+cd ACCV2022
+pip install -r requirements.txt
+```
+Apex
+```bash
+git clone https://github.com/NVIDIA/apex
+cd apex
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
+
+
 ### Data Preparation
 
 1. Run **Data_preprocessing.ipynb**
