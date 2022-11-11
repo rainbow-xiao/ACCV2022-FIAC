@@ -56,7 +56,7 @@ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp
 
 ### Training & Inference
 
-1. Configurations for training can be found in ./GUIE/config_clip_224.py
+1. Configurations for training can be found in ACCV/config_timm.py
 
 2. Training:
 ```bash
