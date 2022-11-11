@@ -1,17 +1,17 @@
-# ACCV 2022 Fine-grained Image Analysis Challenge
+## ACCV 2022 Fine-grained Image Analysis Challenge
 
-# 3rd Place Solution
+## 3rd Place Solution
 
 ### [Competition🔗](https://www.cvmart.net/race/10412/base)
 
-## HARDWARE & SOFTWARE
+### HARDWARE & SOFTWARE
 Ubuntu 18.04.3 LTS
 CPU: AMD EPYC 7543 32-Core Processor
 GPU: 8 * NVIDIA A5000, Memory: 24G
 Python: 3.8
 Pytorch: 1.9.0+cu111
 
-## Data Preparation
+### Data Preparation
 1. Run **Data_preprocessing.ipynb**
     - 1. Remove broken images
     - 2. Make csv file
