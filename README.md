@@ -5,6 +5,8 @@
 
 ### [Competition🔗](https://www.cvmart.net/race/10412/base)
 
+
+
 ### HARDWARE & SOFTWARE
 Ubuntu 18.04.3 LTS
 CPU: AMD EPYC 7543 32-Core Processor
