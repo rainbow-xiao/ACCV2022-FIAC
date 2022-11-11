@@ -38,10 +38,10 @@ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp
 ### Data Preparation
 
 1. Run **Data_preprocessing.ipynb**
-    - 1. Remove broken images
-    - 2. Make csv file
-    - 3. Resampling
-    - 4. StratifiedKfold
+    1. Remove broken images
+    2. Make csv file
+    3. Resampling
+    4. StratifiedKfold
 
 ### Model Preparation
 
