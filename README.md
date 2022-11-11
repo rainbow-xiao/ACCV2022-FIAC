@@ -1,6 +1,7 @@
-## ACCV 2022 Fine-grained Image Analysis Challenge
+# ACCV 2022 Fine-grained Image Analysis Challenge
 
 ## 3rd Place Solution
+
 
 ### [Competition🔗](https://www.cvmart.net/race/10412/base)
 
@@ -18,7 +19,7 @@ Pytorch: 1.9.0+cu111
     - 3. Resampling
     - 4. StratifiedKfold
 
-## Model Preparation
+### Model Preparation
 1. Pre-trained models from ImageNet1K/ImageNet21K:
     - [beitv2-224](https://conversationhub.blob.core.windows.net/beit-share-public/beitv2/beitv2_large_patch16_224_pt1k_ft21k.pth)
     - [beit-384](https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_large_patch16_384_pt22k_ft22kto1k.pth)
@@ -28,7 +29,7 @@ Pytorch: 1.9.0+cu111
     - [swinv2-384](https://github.com/SwinTransformer/storage/releases/download/v2.0.0/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth)
 
 
-## Training & Inference
+### Training & Inference
 1. Configurations for training can be found in ./GUIE/config_clip_224.py
 
 2. Training:
@@ -52,5 +53,5 @@ python -m torch.distributed.launch --nproc_per_node=8 \
 3. Training and Inference **Tools-Train-Inference.ipynb** :
 
 
-## Contact
+### Contact
 Feel free to contact, email: 3579628328@qq.com
