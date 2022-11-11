@@ -8,13 +8,19 @@
 
 
 ### HARDWARE & SOFTWARE
+
 Ubuntu 18.04.3 LTS
+
 CPU: AMD EPYC 7543 32-Core Processor
+
 GPU: 8 * NVIDIA A5000, Memory: 24G
+
 Python: 3.8
+
 Pytorch: 1.9.0+cu111
 
 ### Data Preparation
+
 1. Run **Data_preprocessing.ipynb**
     - 1. Remove broken images
     - 2. Make csv file
@@ -22,6 +28,7 @@ Pytorch: 1.9.0+cu111
     - 4. StratifiedKfold
 
 ### Model Preparation
+
 1. Pre-trained models from ImageNet1K/ImageNet21K:
     - [beitv2-224](https://conversationhub.blob.core.windows.net/beit-share-public/beitv2/beitv2_large_patch16_224_pt1k_ft21k.pth)
     - [beit-384](https://conversationhub.blob.core.windows.net/beit-share-public/beit/beit_large_patch16_384_pt22k_ft22kto1k.pth)
@@ -32,6 +39,7 @@ Pytorch: 1.9.0+cu111
 
 
 ### Training & Inference
+
 1. Configurations for training can be found in ./GUIE/config_clip_224.py
 
 2. Training:
@@ -56,4 +64,5 @@ python -m torch.distributed.launch --nproc_per_node=8 \
 
 
 ### Contact
+
 Feel free to contact, email: 3579628328@qq.com
