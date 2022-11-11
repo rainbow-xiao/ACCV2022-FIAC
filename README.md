@@ -76,7 +76,7 @@ python -m torch.distributed.launch --nproc_per_node=8 \
 --fold 1
 ```
 
-3. Training and Inference **Tools-Train-Inference.ipynb** :
+3. **Tools-Train-Inference.ipynb** : Training and Inference
 
 
 ### Contact
