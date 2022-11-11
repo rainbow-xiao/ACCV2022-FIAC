@@ -44,7 +44,7 @@ class Backbone(nn.Module):
         if self.from_timm==True:
             self.net = timm.create_model(self.name,
                                          pretrained=False)
-            if 'beitv2' in self.name:
+            if 'Deit' in self.name:
                 self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['module'], strict=True) #beitv2
             elif 'beit' in self.name:
                 self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['model'], strict=True) #beit
