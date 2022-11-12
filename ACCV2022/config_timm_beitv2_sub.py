@@ -43,7 +43,7 @@ _C.MODEL.backbone = CN()
 _C.MODEL.backbone.from_timm = True
 _C.MODEL.backbone.name = 'beitv2_large_patch16_224_in22k'
 _C.MODEL.backbone.out_dim = 1024
-_C.MODEL.backbone.pretrained = 'pretrained_models/beitv2_large_patch16_224_pt1k_ft21k.pth'
+_C.MODEL.backbone.pretrained = '../pretrained_models/beitv2_large_patch16_224_pt1k_ft21k.pth'
 
 # _C.MODEL.backbone.name = 'beit_large_patch16_224_in22k'
 # _C.MODEL.backbone.out_dim = 1024
