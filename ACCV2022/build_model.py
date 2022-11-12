@@ -42,13 +42,17 @@ class Backbone(nn.Module):
         self.from_timm = config.MODEL.backbone.from_timm
         self.img_size = config.IMG_SIZE
         if self.from_timm==True:
-            self.net = timm.create_model(self.name,
+            if self.name == 'Deit':
+                self.net = timm.create_model('deit3_large_patch16_384_in21ft1k',
+                                             pretrained=False)
+            else:
+                self.net = timm.create_model(self.name,
                                          pretrained=False)
             if 'beitv2' in self.name:
                 self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['module'], strict=True) #beitv2
             elif 'beit' in self.name:
                 self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['model'], strict=True) #beit
-            elif 'deit3' or 'Deit' in self.name:
+            elif 'deit3' in self.name or 'Deit' in self.name:
                 dicts = torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['model']
                 new_state_dict = {}
                 for k,v in dicts.items():
@@ -63,7 +67,7 @@ class Backbone(nn.Module):
             elif 'efficient' in self.name:
                 self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu'), strict=True)          #efficientnet
             elif 'swin' in self.name:
-                self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['model'], strict=True) #swinv1/v2
+                self.net.load_state_dict(torch.load(config.MODEL.backbone.pretrained, map_location='cpu')['model'], strict=False) #swinv1/v2
 #             logger.info(f"=> Load pretrained backbone '{config.MODEL.backbone.pretrained}' successfully")
 
             self.net.head = nn.Identity()
