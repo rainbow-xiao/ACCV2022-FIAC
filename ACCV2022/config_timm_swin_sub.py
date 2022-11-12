@@ -87,7 +87,7 @@ _C.MODEL.backbone.from_timm = True
 
 _C.MODEL.backbone.name = 'swin_large_patch4_window12_384_in22k'
 _C.MODEL.backbone.out_dim = 1536
-_C.MODEL.backbone.pretrained = 'pretrained_models/swin_large_patch4_window12_384_22k.pth'
+_C.MODEL.backbone.pretrained = '../pretrained_models/swin_large_patch4_window12_384_22k.pth'
 
 # _C.MODEL.backbone.name = 'swinv2_large_window12to16_192to256_22kft1k'
 # _C.MODEL.backbone.out_dim = 1536
