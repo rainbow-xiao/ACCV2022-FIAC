@@ -95,7 +95,7 @@ _C.MODEL.backbone.from_timm = True
 
 _C.MODEL.backbone.name = 'swinv2_large_window12to24_192to384_22kft1k'
 _C.MODEL.backbone.out_dim = 1536
-_C.MODEL.backbone.pretrained = 'pretrained_models/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth'
+_C.MODEL.backbone.pretrained = '../pretrained_models/swinv2_large_patch4_window12to24_192to384_22kto1k_ft.pth'
 
 #Optimizer
 _C.Optimizer = CN()
