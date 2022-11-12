@@ -71,7 +71,7 @@ _C.MODEL.backbone.from_timm = True
 
 _C.MODEL.backbone.name = 'deit3_large_patch16_384_in21ft1k'
 _C.MODEL.backbone.out_dim = 1024
-_C.MODEL.backbone.pretrained = 'pretrained_models/deit_3_large_384_21k.pth'
+_C.MODEL.backbone.pretrained = '../pretrained_models/deit_3_large_384_21k.pth'
 
 # _C.MODEL.backbone.name = 'tf_efficientnet_l2_ns_475'
 # _C.MODEL.backbone.out_dim = 5504
