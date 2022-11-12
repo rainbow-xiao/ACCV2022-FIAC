@@ -55,7 +55,7 @@ _C.MODEL.backbone.from_timm = True
 
 _C.MODEL.backbone.name = 'beit_large_patch16_512'
 _C.MODEL.backbone.out_dim = 1024
-_C.MODEL.backbone.pretrained = 'pretrained_models/beit_large_patch16_512_pt22k_ft22kto1k.pth'
+_C.MODEL.backbone.pretrained = '../pretrained_models/beit_large_patch16_512_pt22k_ft22kto1k.pth'
 
 # _C.MODEL.backbone.name = 'convnext_large_in22k'
 # _C.MODEL.backbone.out_dim = 1536
