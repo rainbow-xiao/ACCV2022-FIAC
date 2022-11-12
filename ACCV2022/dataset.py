@@ -84,6 +84,6 @@ class ACCV_test(Dataset):
         return img
         
     def get_transforms(self,):
-        transforms=(A.Compose([A.Resize(self.img_size, self.img_size),
+        transforms=(A.Compose([A.Resize(self.img_size, self.img_size)]))
         return transforms
 
